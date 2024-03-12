@@ -42,7 +42,7 @@ span{
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding:  15px 160px 15px 160px;
+  padding:  15px 50px 15px 100px;
   gap: 485px;
   height: 77px;
   left: 0px;
@@ -399,6 +399,28 @@ span{
 }
 /* end Benefits */
 
+.Footer{
+  width: 100%;
+  height: 80px;
+  padding-left: 160px; 
+  padding-right: 160px;
+  padding-top: 24px; 
+  padding-bottom: 24px; 
+  background: #FDFDFD; 
+  border-top: 1px #1E88E5 solid;
+  justify-content: center; align-items: center; gap: 210px; display: inline-flex
+}
+.Footer .Logo{
+  width: 60px; 
+  height: 60px;
+}
+.Logo_text span{
+  color: var(--main-color); 
+  font-size: 18px; 
+  font-family: Poppins; 
+  font-weight: 400; 
+  word-wrap: break-word;
+}
 /* uultimate guide */
 .side-content{
   justify-content: center;
@@ -560,6 +582,20 @@ span{
   }
   .Section-3 .row .coloumn .serv .text {
     padding: 0px;
+}
+.Footer {
+  width: 100%;
+  height: 80px;
+  /* padding-left: 160px; */
+  /* padding-right: 160px; */
+  /* padding-top: 24px; */
+  /* padding-bottom: 24px; */
+  background: #FDFDFD;
+  border-top: 1px #1E88E5 solid;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  display: inline-flex;
 }
   
 }
