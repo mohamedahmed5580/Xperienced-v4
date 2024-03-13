@@ -90,6 +90,69 @@ span{
   line-height: 25px;
 }
 
+.sidebar {
+  background:#fff;
+  width:235px;
+  position:fixed;
+  top:0;
+  left:-235px;
+  height:100%;
+  box-shadow:0 2px 8px rgba(0,0,0,0.2);
+  padding-top:90px;
+  transition:all 0.3s ease-out;
+  text-align: center;
+  z-index: 6;
+}
+.nav-items .items{
+  display: flex;
+  flex-direction:row
+}
+.sidebar ul {
+  list-style:none;
+}
+.sidebar ul li {
+  display:block;
+  padding: 5px;
+}
+.sidebar ul li a {
+  padding:8px 15px;
+  font-size:16px;
+  color:var(--secondary2-color);
+  font-family:arial;
+  text-decoration:none;
+  text-transform: uppercase;
+  display:block;
+  position:relative;
+  z-index:1;
+  transition:all 0.3s ease-out;
+  font-weight:500;
+}
+.sidebar ul li a:before {
+  content:'';
+  position:absolute;
+  bottom:0;
+  left:50%;
+  right:50%;
+  transform:translate(-50%,-50%);
+  width:0;
+  height:1px;
+  background:var(--main3-color);
+  z-index:-1;
+  transition:all 0.3s ease-out;
+}
+.sidebar ul li a:hover:before {
+  width:100%;
+}
+.sidebar ul li a:hover {
+  color:var(--main3-color);
+  background-color: var(--main2-background);
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.sidebarshow {
+  left:0;
+}
+
 /* start landing */
 
 .Hero_Section{
@@ -420,7 +483,7 @@ span{
 }
 
 .XperiencedAllRightsReserved span {
-  color: #252525;
+  color: var(--main-color);
   font-size: 18px;
   font-family: Poppins;
   font-weight: 400;
@@ -428,7 +491,7 @@ span{
 }
 
 .XperiencedAllRightsReserved span:nth-child(2) {
-  color: #1E88E5;
+  color: var(--main-color);
   font-weight: 700;
 }
 
@@ -447,7 +510,9 @@ span{
   align-items: center;
   display: inline-flex;
 }
-
+.SocialIcons .so{
+  color: var(--main-color);
+}
 .IconLinkedin .Vector {
   width: 29.83px;
   height: 29.83px;
@@ -602,30 +667,40 @@ span{
 .end span{
   color: var(--section-background);
 }
+
+
+
+
+
 @media (max-width:725px) {
   .header .nav {
-
     padding: 0px;
   }
   .Hero_Section .text-center{
-      width: 320px;
-      height: 70px;
-      left: 10px;
-      margin-right: auto;
-      margin-left: auto;
+    width: 320px;
+    height: 70px;
+    left: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
   .Hero_Section .hero-text {
     display: block;
     font-size: 18px;
     height: 48px;
-    left: 30px;
+    left: 35px;
+    margin-right: auto;
+    margin-left: auto;
   }
   .Hero_Section .text-center h2 {
     font-size: 15px; 
-    line-height:0px;  
+    line-height:0px; 
+
   }
   .Hero_Section .hero-link {
-    left: 70px;
+    left: 90px;
     width: 185px;
     height: 46px;
     font-size: large;
@@ -657,15 +732,41 @@ span{
   .Section-3 .row .coloumn .serv .text {
     padding: 0px;
 }
+.Section-3 .row .coloumn .serv{
+  width: 300px;
+}
 .Footer {
-  display: block;
+  display: flex;
   width: 100%;
   height: 90px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   background: #FDFDFD;
-  border-top: 1px #1E88E5 solid;
+  border-top: 1px var(--main-color) solid;
   justify-content: center;
   align-items: center;
   gap: 0px;
+}
+.Logo{
+  width: 40px;
+  height: 40px;
+}
+.XperiencedAllRightsReserved{
+  display: flex;
+}
+.XperiencedAllRightsReserved p {
+  font-size: 10PX;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.XperiencedAllRightsReserved p span {
+  font-size: 12PX;
+  color: var(--main-color);
+}
+.SocialIcons {
+  gap: 5px;
 }
   
 }
