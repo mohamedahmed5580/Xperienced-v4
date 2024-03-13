@@ -929,6 +929,8 @@ p.text-34 {
 .Login, .Signin {
   display: block;
   width: 95%;
+  margin-right: auto;
+  margin-left: auto;
 }
 .Signin .Paragraph ,.Login .Paragraph{
   text-align: center; 
