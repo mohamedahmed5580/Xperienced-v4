@@ -668,10 +668,6 @@ span{
   color: var(--section-background);
 }
 
-
-
-
-
 @media (max-width:725px) {
   .header .nav {
     padding: 0px;
