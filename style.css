@@ -338,13 +338,12 @@ span{
   color: var(--main-color);
 }
 .Benefits .container .box .text{
-
   width: 251px;
   height: 39px;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 19px;
   line-height: 39px;
   color: var(--secondary2-color);
 
@@ -819,6 +818,178 @@ p.text-34 {
   text-align: center;
 }
 /* Additional CSS would follow for .Form, .Container, .SubContainer, .InputField, .Icon, .TextButton, .CheckBoxContainer, .CheckBox, .Button, .Line, and so on, directly translating the inline styles into CSS rules. For brevity, I've not repeated all individual rules, but they would be formatted similarly to the examples above. */
+/* profile page */
+.emp-profile{
+  padding: 3%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  border-radius: 0.5rem;
+  background: #fff;
+}
+.profile-img{
+  text-align: center;
+  overflow: hidden;
+  height: 100%;
+  
+}
+.profile-img img{
+  width: 250px;
+  height: 100%;
+  border-radius: 50%;
+}
+.profile-img .file {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 50%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+
+
+}
+.profile-img .file input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
+.profile-head h5{
+  color: #333;
+}
+.profile-head h6{
+  color: #0062cc;
+}
+.profile-edit-btn{
+  border: none;
+  border-radius: 1.5rem;
+  width: 70%;
+  padding: 2%;
+  font-weight: 600;
+  color: #6c757d;
+  cursor: pointer;
+}
+.proile-rating{
+  font-size: 12px;
+  color: #818182;
+  margin-top: 5%;
+}
+.proile-rating span{
+  color: #495057;
+  font-size: 15px;
+  font-weight: 600;
+}
+.profile-head .nav-tabs{
+  margin-bottom:5%;
+}
+.profile-head .nav-tabs .nav-link{
+  font-weight:600;
+  border: none;
+  color: var(--secondary2-color);
+}
+.profile-head .nav-tabs .nav-link.active{
+  border: none;
+  border-bottom:2px solid var(--main3-color);
+  color: var(--main3-color);
+}
+.profile-work{
+  padding: 14%;
+  margin-top: -15%;
+}
+.profile-work p{
+  font-size: 12px;
+  color: #818182;
+  font-weight: 600;
+  margin-top: 10%;
+}
+.profile-work a{
+  text-decoration: none;
+  color: #495057;
+  font-weight: 600;
+  font-size: 14px;
+}
+.profile-work ul{
+  list-style: none;
+}
+.profile-tab label{
+  font-weight: 600;
+  width: 150px;
+ 
+}
+.profile-tab p{
+  font-weight: 600;
+  color: #0062cc;
+}
+.col-md-6{
+  width: 45%;
+}
+/* .profile2 page */
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: #BA68C8
+}
+
+.profile-button {
+  background: rgb(99, 39, 120);
+  box-shadow: none;
+  border: none
+}
+
+.profile-button:hover {
+  background: #682773
+}
+
+.profile-button:focus {
+  background: #682773;
+  box-shadow: none
+}
+
+.profile-button:active {
+  background: #682773;
+  box-shadow: none
+}
+
+.back:hover {
+  color: #682773;
+  cursor: pointer
+}
+
+.labels {
+  font-size: 11px
+}
+
+.add-experience:hover {
+  background: #BA68C8;
+  color: #fff;
+  cursor: pointer;
+  border: solid 1px #BA68C8
+}
+img.rounded-circle.mt-5{
+  width: 250px;
+}
+span.text-black{
+  margin-top: 10px;
+  font-size: x-large;
+  font-weight: bold;
+}
+.file.btn.btn-lg.btn-primary {
+  position: relative;
+  overflow: hidden;
+  margin-top: -20%;
+  width: 70%;
+  border: none;
+  border-radius: 0;
+  font-size: 15px;
+  background: #212529b8;
+}
+.file.btn.btn-lg.btn-primary input {
+  position: absolute;
+  opacity: 0;
+  right: 0;
+  top: 0;
+}
 
 
 
@@ -856,21 +1027,22 @@ p.text-34 {
     font-size: large;
   }
   .Benefits{
-    height: 60pc;
+    height: 70pc;
   }
   .Benefits .header-about{
-    padding-bottom: 150px;
+    padding-bottom: 50px;
   }
+  
   .Benefits .container{
-   
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0px;
-    width: 0px;
-    height: 373px;
+    width: 350px;
+    height: 773px;
     box-shadow: 30px 30px 30px 30px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
+    margin-bottom: 150px;
   }
 
   .Section-3 .row {
@@ -935,8 +1107,202 @@ p.text-34 {
 .Signin .Paragraph ,.Login .Paragraph{
   text-align: center; 
 }
-.col-12 button.btn.btn-primary {
+.col-12 a.btn.btn-primary {
   width: 95%;
 }
   
+
+.profile-work{
+  margin-top: 0px;
+ }
+ .emp-profile{
+   width: 95%;
+   height: 850px;
+ }
+ .profile-img img {
+   width: 70%;
+   height: 100%;
+   padding-top: 10px;
+}
+
+
+ .profile-work .row {
+   display: grid;
+   grid-template-columns: repeat(2, minmax(100px, 1fr));
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   position: relative;
+
+ }
+ .profile-work p{
+   font-size: 18px;
+   color: #818182;
+   font-weight: 600;
+   margin-top: 8%;
+ }
+ .profile-head .nav-tabs {
+  position: absolute;
+  margin-top: 300px;
+  }
+ .profile-tab p{
+   width: 200px;
+   margin-left: 70px;
+ }
+ .profile-tab .right-row p{
+   width: 200px;
+   margin-left: 100px;
+ }
+ 
+ /* profile page */
+ .emp-profile{
+   padding: 3%;
+   margin-top: 10%;
+   margin-bottom: 3%;
+   border-radius: 0.5rem;
+   background: #fff;
+ }
+
+
+ .file.btn.btn-lg.btn-primary {
+   position: relative;
+   overflow: hidden;
+   margin-top: -15%;
+   width: 60%;
+   border: none;
+   border-radius: 0;
+   font-size: 15px;
+   background: #212529b8;
+ 
+ 
+ }
+ .file.btn.btn-lg.btn-primary input {
+   position: absolute;
+   opacity: 0;
+   right: 0;
+   top: 0;
+ }
+
+
+ .profile-edit-btn{
+   border: none;
+   border-radius: 1.5rem;
+   width: 70%;
+   padding: 2%;
+   font-weight: 600;
+   color: #6c757d;
+   cursor: pointer;
+ }
+ .proile-rating{
+   font-size: 12px;
+   color: #818182;
+   margin-top: 5%;
+ }
+ .proile-rating span{
+   color: #495057;
+   font-size: 15px;
+   font-weight: 600;
+ }
+
+ .col-md-8 .col-md-6{
+   width: 5%;
+
+ }
+ /* .profile2 page */
+ .land{
+   margin-top: 200px;
+ }
+ .form-control:focus {
+   box-shadow: none;
+   border-color: #BA68C8
+ }
+ 
+ .profile-button {
+   background: rgb(99, 39, 120);
+   box-shadow: none;
+   border: none
+ }
+ 
+ .profile-button:hover {
+   background: #682773
+ }
+ 
+ .profile-button:focus {
+   background: #682773;
+   box-shadow: none
+ }
+ 
+ .profile-button:active {
+   background: #682773;
+   box-shadow: none
+ }
+ 
+ .back:hover {
+   color: #682773;
+   cursor: pointer
+ }
+
+ .labels {
+   font-size: 11px
+ }
+ 
+ .add-experience:hover {
+   background: #BA68C8;
+   color: #fff;
+   cursor: pointer;
+   border: solid 1px #BA68C8
+ }
+
+   
+ .profile-work{
+   margin-top: 0px;
+  }
+  .emp-profile{
+    margin-top: 100px;
+    width: 95%;
+    height: 850px;
+  }
+ 
+  .profile-head{
+    text-align: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .profile-head h5{
+    width: 330px;
+    color: var(--secondary2-color);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .profile-head h6{
+    color: var(--main-color);
+    width: 330px;
+  }
+
+
+  .profile-tab .sk{
+    width: 180px;
+    margin-left: 0px;
+  }
+  .col-md-2{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+  .profile-tab{
+    margin-top: 30px;
+  }
+  .editbtn{
+    width: 400px;
+    display: block;
+    margin-left: 100px;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
 }
