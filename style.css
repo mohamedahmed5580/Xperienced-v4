@@ -1066,7 +1066,9 @@ span.text-black{
   line-height: 1.5;
   color: #656567;
 }
-
+.right-box{
+  margin-top: 100px;
+}
 @media (max-width:725px) {
   .header .nav {
     padding: 0px;
