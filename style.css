@@ -157,31 +157,38 @@ span{
 /* start landing */
 
 .Hero_Section{
-
-  height:600px ;
   width: 100%;
+  height:100% ;
   background-color: var(--secondary2-color);
   background-size: cover;
+}
+.Hero_Section .overlay{
+  display: flex;
+  
 }
 .Hero_Section .overlay .hero_bg{
   width: 100%;
   height: 600px;
+  position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(desk-593327_1920.jpg);
 }
 .Hero_Section .text-center {
   display: flex;
   padding: 10px 20px;
   gap: 10px;
-  position: absolute;
+  position: relative;
   width: 785px;
   height: 100px;
-  left: 327px;
-  top: 295px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 300px;
   background: #FFFFFF;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+  
 }
+
 .Hero_Section .text-center h2{
   font-family: 'Poppins';
   font-style: normal;
@@ -190,38 +197,42 @@ span{
   line-height: 81px;
   align-items: center;
   text-align: center;
+  
 }
 .Hero_Section .hero-text{
-  position: absolute;
-  /* width: 509px; */
+  display: block;
+  position: relative;
   height: 48px;
-  left: 466px;
-  top: 421px;
   font-family: 'Poppins';
+  margin-right: auto;
+  margin-left: auto;
   font-style: normal;
   font-weight: 300;
   font-size: 32px;
   line-height: 48px;
-  color: var(--section-background);
+  text-align: center;
+  color: var(--secondary-color);
+  margin-top: 25px;
 
 }
 .Hero_Section .hero-link{
-  display: flex;
+  display: block;
+  position: relative;
   flex-direction: row;
+  margin-right: auto;
+  margin-left: auto;
   justify-content: center;
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
-  position: absolute;
   width: 215px;
   height: 56px;
-  left: 612px;
-  top: 494px;
   font-size: x-large;
   font-weight: bold;
   color: var(--section-background);
   background: var(--main-color);
   border-radius: 4px;
+  margin-top: 25px;
 } 
 .img-bg{  
   background-color: var(--main2-background);
@@ -287,7 +298,7 @@ span{
   text-align: center;
   background-size: cover;
   background: var(--section-background);
-
+  margin-top: 50px;
 }
 .Benefits .header-about{
   padding-bottom: 50px;
@@ -396,7 +407,7 @@ span{
   align-items: center;
   padding: 0px 20px;
   gap: 10px;
-  width: 163px;
+  width: 263px;
   height: 56px;
   background: var(--section-background);
   border-radius: 4px;
@@ -820,6 +831,7 @@ p.text-34 {
 }
 /* Additional CSS would follow for .Form, .Container, .SubContainer, .InputField, .Icon, .TextButton, .CheckBoxContainer, .CheckBox, .Button, .Line, and so on, directly translating the inline styles into CSS rules. For brevity, I've not repeated all individual rules, but they would be formatted similarly to the examples above. */
 /* profile page */
+
 .emp-profile{
   padding: 3%;
   margin-top: 10%;
@@ -827,6 +839,7 @@ p.text-34 {
   border-radius: 0.5rem;
   background: #fff;
 }
+
 .profile-img{
   text-align: center;
   overflow: hidden;
@@ -991,6 +1004,8 @@ span.text-black{
   right: 0;
   top: 0;
 }
+/* Start find-assistant page */
+
 .container{
 
 }
@@ -1020,7 +1035,7 @@ span.text-black{
 }
 .frame-10 {
   border-radius: 8px;
-  border: 1px solid #F1F1F3;
+ border: 1px solid #F1F1F3;
   background: #FCFCFD;
   display: flex;
   flex-direction: row;
@@ -1066,17 +1081,202 @@ span.text-black{
   line-height: 1.5;
   color: #656567;
 }
-.right-box{
-  margin-top: 100px;
+/* end find-assistant page */
+
+/* Start Offer_Help page */
+.Offer_Help {
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 3%;
+  
 }
-@media (max-width:725px) {
+.Offer_Help .Required{
+  display: block;
+  width: 250px;
+  height: 900px;
+  background-color: var(--section-background);
+  padding: 40px 15px;
+  gap: 40px;
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.Offer_Help .Required .Requir{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+}
+.Offer_Help .Required .Requir span{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: var(--secondary2-color);
+}
+
+.Offer_Help .search{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  margin-top: 40px;
+
+}
+.Offer_Help .search h5{
+  margin-bottom: 10px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--grey-15, var(--secondary2-color));
+}
+.Offer_Help .search .form-control{
+  border-radius: 8px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  background: var(--white-99, #FCFCFD);
+  padding: 3px 19px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.Offer_Help .category{
+  margin-bottom: 25px;
+}
+.Offer_Help .category h5{
+  margin-bottom: 10px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--grey-15, var(--secondary2-color));
+}
+.Offer_Help .category .Check_boxs{
+  display: block;
+}
+.Offer_Help .category .Check_boxs .form-check {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.Offer_Help .category .Check_boxs .form-check .form-check-input{
+  border-radius: 4px;
+  border: 1px solid var(--white-95, #F1F1F3);
+  /* background-color: var(--white-97, #F7F7F8); */
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+.Offer_Help .category .Check_boxs .form-check .form-check-label{
+  margin: 3px 0;
+  display: inline-block;
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--grey-40, var(--secondary3-color));
+}
+
+.Offer_Help .Categorys{
+  border-radius: 10px;
+  background: var(--absolute-white, #FFFFFF);
+  display: flex;
+  flex-direction: column;
+  padding: 40px 43.5px 262px 43.5px;
+  width: 813px;
+  box-sizing: border-box;
+  margin-left: 30px;
+  
+}
+.Offer_Help .Categorys .box{
+  border-radius: 8px;
+  border: 1px solid #F1F1F3;
+  background: #FCFCFD;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  padding: 14px 0 14px 19px;
+  width: fit-content;
+  box-sizing: border-box;
+  width: 100%;
+}
+.Offer_Help .Categorys .box p{
+  font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.333;
+  color: var(--main-color);
+}
+.Offer_Help .Categorys .box .text{
+  margin-bottom: 10px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--secondary2-color);
+
+}
+.Offer_Help .Categorys .box .Add{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 175px;
+  box-sizing: border-box;
+}
+.Offer_Help .Categorys .box .price{
+  margin: 4px 7.5px 4px 0;
+  display: inline-block;
+  width: 85.5px;
+  overflow-wrap: break-word;
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #000000;
+}
+.Offer_Help .Categorys .box .btn_add{
+  display: flex;
+  width: 100px;
+  flex-direction: row;
+  justify-content: center;
+  padding: 4px 9.8px;
+  box-sizing: border-box;
+  overflow-wrap: break-word;
+  border-radius: 8px;
+  background: var(--main-color);
+  font-family: 'Poppins';
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1.5;
+  color: var(--absolute-white, #FFFFFF);
+}
+.Offer_Help .Categorys .box .btn_add:hover{
+  background-color: var(--secondary-color);
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+@media (max-width:825px) {
   .header .nav {
     padding: 0px;
   }
   .Hero_Section .text-center{
     width: 320px;
     height: 70px;
-    left: 25px;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
@@ -1087,20 +1287,19 @@ span.text-black{
     display: block;
     font-size: 18px;
     height: 48px;
-    left: 35px;
+    
     margin-right: auto;
     margin-left: auto;
   }
   .header .navbar .collapse .navbar-nav {
-    padding: 25px;
+    height: 500px;  
   }
   .navbar-collapse .d-flex {
     display: flex;
-    margin-top: 150px;
     align-items: center;
     text-align: center;
-    justify-content: center ;
-
+    margin-top: 100px;
+    justify-content: center;
   }
   .navbar-light .navbar-toggler {
     color: rgba(255, 255, 255, 0.55);
@@ -1116,9 +1315,11 @@ span.text-black{
     border-bottom: 1px solid var(--secondary-color);
 
   }
-  .header .navbar .collapse .navbar-nav{
-
+  li.nav-item:hover {
+      background-color: var(--section-background);
+      color: var(--secondary2-color);
   }
+
 
   div#navbarScroll {
     background-color: var(--main-color);
@@ -1136,7 +1337,7 @@ span.text-black{
 
   }
   .Hero_Section .hero-link {
-    left: 90px;
+
     width: 185px;
     height: 46px;
     font-size: large;
@@ -1427,5 +1628,26 @@ span.text-black{
 
   .Type_Category .col-md-3 {
     padding-left: 10px;
+  }
+
+  /* Offer_Help page */
+  .Offer_Help {
+    display: block;
+  }
+
+  .Offer_Help .Required{
+    width: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    height: 700px;
+  }
+  .Offer_Help .Categorys{
+    width: 90%;
+    margin-top: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 800px;
+    
   }
 }
