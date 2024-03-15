@@ -1431,7 +1431,9 @@ span.text-black{
   width: 95%;
 }
   
-
+.Section-4 .header-about h5{
+  font-size: 20px;
+}
 .profile-work{
   margin-top: 0px;
  }
