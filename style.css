@@ -60,6 +60,34 @@ span{
   flex-grow: 0;
 
 }
+.sidepar {
+  display: flex;
+  flex-direction: row;
+  width: 139.1px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.chat {
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 9.5px 12.8px 11.5px 12.8px;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  margin-left: 5px;
+}
+
+.chat a{
+  text-decoration: none;
+  color: var(--section-background);
+}
+.vector {
+  width: 18.1px;
+  height: 19.5px;
+}
 
 .header .navbar .collapse .navbar-nav .nav-l{
   font-family: 'Poppins';
@@ -1293,13 +1321,24 @@ span.text-black{
   }
   .header .navbar .collapse .navbar-nav {
     height: 500px;  
+
   }
   .navbar-collapse .d-flex {
     display: flex;
     align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
     justify-content: center;
+  }
+  .navbar-collapse .sidepar {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
   }
   .navbar-light .navbar-toggler {
     color: rgba(255, 255, 255, 0.55);
@@ -1315,11 +1354,15 @@ span.text-black{
     border-bottom: 1px solid var(--secondary-color);
 
   }
-  li.nav-item:hover {
-      background-color: var(--section-background);
-      color: var(--secondary2-color);
-  }
 
+  .header .navbar .collapse .navbar-nav .nav-l:hover{
+    background-color: var(--section-background);
+    color: var(--secondary2-color);
+  }
+  .header .navbar .collapse .navbar-nav .nav-l:hover svg{
+    background-color: var(--section-background);
+    color: var(--secondary2-color);
+  }
 
   div#navbarScroll {
     background-color: var(--main-color);
