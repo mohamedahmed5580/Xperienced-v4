@@ -79,7 +79,6 @@ span{
   box-sizing: border-box;
   margin-left: 5px;
 }
-
 .chat a{
   text-decoration: none;
   color: var(--section-background);
