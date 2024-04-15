@@ -1363,12 +1363,12 @@ span.text-black{
 .shadow-none {
   box-shadow: none!important;
 }
-.profile .main-body .col-md-8 .card .card-body .row{
-
+li.list-group-item{
+display: block;
 }
 .w-5{
   width: 70%;
-  text-align: right;
+  text-align: left;
   font-size: 14px;
 
 }
@@ -1658,6 +1658,12 @@ span.text-black{
    width: 5%;
 
  }
+ .w-5{
+  width: 70%;
+  text-align: right;
+  font-size: 14px;
+
+}
  /* .profile2 page */
  .land{
    margin-top: 200px;
