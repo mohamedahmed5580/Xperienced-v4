@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,23 +69,31 @@
   <div class="SubContainer">
     <div class="TextContainer">
       <div class="Heading">Find the best instructors for the best learning experience.</div>
-      <div class="Paragraph">Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.</div>
     </div>
   </div>
   
   <div class="Signin">
     <div class="TextContainer">
-      <div class="Heading">Sign In</div>
+      <div class="Heading">Sign Up</div>
       <div class="Paragraph">Welcome Please Sign in to access your account.</div>
     </div>
     <form class="row g-3">
       <div class="col-md-15">
-        <label for="inputEmail4" class="form-label">Email</label>
-        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                
+        <label for="inputName" class="form-label">Name : </label>
+        <div class="Nam">
+          <input type="text" class="form-control-N " id="inputEmail4" placeholder="First Name" required>
+          <input type="text" class="form-control-N" id="inputEmail4" placeholder="Last Name" required>
+        </div>
+        
+        <label for="inputEmail4" class="form-label">Email :</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email" required>
+        <label for="inputEmail4" class="form-label">Phone :</label>
+        <input type="text" class="form-control" id="inputEmail4" placeholder="Phone Number" required>
         <label for="inputPassword4" class="form-label">Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Password" required>
         <label for="inputPassword4" class="form-label">Confirm Password</label>
-        <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password">
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Confirm Password" required>
         <label class="form-check-label ">
           Forgot Password?
         </label>
@@ -99,7 +107,7 @@
         </div>
       </div>
       <div class="col-12">
-        <a href="Indexs.html"  class="btn btn-primary">Sign in</a>
+        <a  class="btn btn-primary">Sign in</a>
       </div>
       <div class="container-24">
         <div class="line">
