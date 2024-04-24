@@ -195,7 +195,7 @@ span{
 }
 .Hero_Section .overlay .hero_bg{
   width: 100%;
-  height: 600px;
+  height: 100%;
   position: absolute;
   background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(desk-593327_1920.jpg);
 }
@@ -503,15 +503,16 @@ span{
 .Footer {
   width: 100%;
   height: 80px;
-  padding-left: 160px;
-  padding-right: 160px;
+
   padding-top: 24px;
   padding-bottom: 24px;
   background: #FDFDFD;
   border-top: 1px #1E88E5 solid;
   justify-content: center;
   align-items: center;
-  margin-top: 150px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
   gap: 110px;
   display: inline-flex;
 }
@@ -741,7 +742,7 @@ span{
   word-wrap: break-word;
 }
 
-.Paragraph {
+.Paragraph  {
   align-self: stretch;
   color: #59595A;
   font-size: 16px;
@@ -753,7 +754,7 @@ span{
 .Login,
 .Signin {
   width: 48%;
-  height: 950px;
+  height: 1000px;
   padding: 40px;
   background: white;
   border-radius: 10px;
@@ -770,10 +771,20 @@ span{
   text-align: center; 
   color: var(--secondary2-color); 
   font-size: 38px; 
-  ont-family: Poppins;
-   font-weight: 600;
+  font-weight: 600;
   word-wrap: break-word;
 } 
+.Login .Paragraph ,
+.Signin .Paragraph {
+  align-self: stretch;
+  color: #59595A;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  word-wrap: break-word;
+  text-align: center;
+}
 .Login .row .col-md-15 .form-label{
   margin-bottom: 10px;
   display: inline-block;
@@ -791,7 +802,7 @@ span{
   display: flex;
   justify-content: space-between;
 }
-.Signin .row .col-md-15 .form-control-N{
+.Signin .row .col-md-15 .Nam .form-control-N{
   display: flex;
   border-radius: 8px;
   border: 1px solid var(--white-95, #F1F1F3);
@@ -847,12 +858,19 @@ span{
   line-height: 1.5;
   color: var(--grey-60, #98989A);
 }
+.text-26{
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--secondary2-color) !important;
+}
 .line-26 {
   background: #E4E4E7;
   margin: 10.5px 0 9.5px 0;
   width: 208px;
   height: 1px;
 }
+
 .col-12 a.btn.btn-primary {
   margin-left: auto;
   margin-right: auto;
@@ -971,11 +989,16 @@ p.text-34 {
 .profile-work ul{
   list-style: none;
 }
+.profile-tab{
+  width: 50%;
+}
+
 .profile-tab label{
   font-weight: 600;
   width: 150px;
  
 }
+
 .profile-tab p{
   font-weight: 600;
   color: #0062cc;
@@ -987,7 +1010,7 @@ p.text-34 {
 
 .form-control:focus {
   box-shadow: none;
-  border-color: #BA68C8
+ border-color: #BA68C8
 }
 
 .profile-button {
@@ -1049,11 +1072,10 @@ span.text-black{
   right: 0;
   top: 0;
 }
+
 /* Start find-assistant page */
 
-.container{
 
-}
 .container .find-assistant {
   margin-bottom: 40px;
   display: flex;
@@ -1281,7 +1303,7 @@ span.text-black{
   flex-direction: row;
   justify-content: space-between;
   align-self: flex-start;
-  width: 175px;
+  width: 300px;
   box-sizing: border-box;
 }
 .Offer_Help .Categorys .box .price{
@@ -1296,25 +1318,25 @@ span.text-black{
   color: #000000;
 }
 .Offer_Help .Categorys .box .btn_add{
-  display: flex;
+  display: block;
   width: 100px;
-  flex-direction: row;
-  justify-content: center;
   padding: 4px 9.8px;
+  margin-right: 15px;
   box-sizing: border-box;
-  overflow-wrap: break-word;
   border-radius: 8px;
   background: var(--main-color);
-  font-family: 'Poppins';
+  font-family: revert;
   font-weight: 600;
   font-size: 10px;
-  line-height: 1.5;
-  color: var(--absolute-white, #FFFFFF);
+  color: var(--section-background);
 }
 .Offer_Help .Categorys .box .btn_add:hover{
   background-color: var(--secondary-color);
   color: var(--main-color);
   border: 1px solid var(--main-color);
+}
+.Offer_Help .Categorys .box .Add .btnAR {
+  display: flex;
 }
 
 /* start new profile page  */
@@ -1356,39 +1378,42 @@ a#home-tab ,a#profile-tab{
 a#home-tab .text-secondary ,a#profile-tab .text-secondary ,.skils .text-secondary{
   margin-right: 5px;
 }
+ .r-box{
+  display: block;
+  width: 40%;
 
+  position: absolute;
+  margin-top: 290px;
+  left: 55%;
+  z-index: 100;
+}
 .profile .card {
-  position: relative;
   display: flex;
-  flex-direction: column;
   width: 100% ;
-  height: 300px;
+  height: max-content;
   word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
   border: 0 solid rgba(0,0,0,.125);
-  border-radius: .5rem;
-  box-shadow: 0 1px 3px 0 rgbaz(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
 }
 .no{
   background-color: var(--secondary-color) !important;
+}
+.profile .text-head{
+  font-size: 16px;
+  text-transform: uppercase;
 }
 
 .card-body {
   flex: 1 1 auto;
   min-height: 1px;
   padding: 1rem;
+  overflow: hidden;
 }
-
-.gutters-sm {
-  margin-right: -8px;
-  margin-left: -8px;
+.card-style{
+  margin-left: 25px;
 }
-
-.gutters-sm>.col, .gutters-sm>[class*=col-] {
-  padding-right: 8px;
-  padding-left: 8px;
-}
+.card-content{
+  padding: 20px;
+} 
 .mb-3, .my-3 {
   margin-bottom: 1rem!important;
 }
@@ -1554,6 +1579,7 @@ display: block;
   border-top: 1px var(--main-color) solid;
   justify-content: center;
   align-items: center;
+  position: relative; 
   gap: 0px;
 }
 .Logo{
