@@ -1956,7 +1956,8 @@ span.action-text {
   }
   .profile-tab{
     margin-top: 30px;
-    width: 100%;
+    margin-left: 10px;
+    width: 95%;
     justify-content: center;
     align-items: center;
   }
@@ -1974,8 +1975,13 @@ span.action-text {
   .profile .head .head-text {
     font-size: 23px;
   }
-  .row .column {
-    width: auto;
+
+  .roww {
+    display: block;
+
+}
+  .roww .column {
+    width: 95%;
     margin-top: 20px;
 }
   .editbtn{
