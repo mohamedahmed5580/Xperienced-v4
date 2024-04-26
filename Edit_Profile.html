@@ -47,7 +47,6 @@
             </li>
           </ul>
           <div class="sidepar d-flex">
-
             <div class="chat">
               <a class="vector" href="#" ><i class="fa-solid fa-bell" ></i> </a>
             </div>
@@ -55,8 +54,39 @@
               <a class="vector" href="#"  ><i class="fa-solid fa-envelope"></i></i></a>
             </div>
             <div class="chat">
-              <a class="vector" href="Profile.html"  ><i class="fa-solid fa-user"></i></a>
+              <a class="vector" href="{% url 'profile'%}"  ><i class="fa-solid fa-user"></i></a>
             </div>
+          </div>
+          <div class="accunt-content dropdown">
+            <a class="btn btn-secondary dropdown-toggle bg-img" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <img class="img-navb" src="https://avatars.hsoubcdn.com/ec365cbde984baac6669282ae0242d02?s=128">
+            </a>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item" href="">
+                <i class="fa fa-fw fa-user"></i>
+                Mohamed Ahmed
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-fw fa-usd"></i>
+                Balance
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-fw fa-bookmark"></i>
+                My Favourite
+              </a>
+              <hr>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-fw fa-edit"></i>
+                Edit Profile 
+              </a>
+              <a class="dropdown-item" href="#">
+                <i class="fa fa-fw fa-sign-out"></i>
+                Logout
+              </a>
+
+
+          </div>
           </div>
         </div>
       </div>
