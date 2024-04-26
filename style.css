@@ -1229,7 +1229,6 @@ tr td span {
   margin-right: 10px;
 }
 .card-content .carda__footer{
-  padding: 15px;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -1984,6 +1983,15 @@ span.action-text {
     width: 95%;
     margin-top: 20px;
 }
+  .rowww {
+    display: block;
+
+  }
+  .rowww .column {
+    width: 100%;
+    margin-top: 20px;
+  }
+
   .editbtn{
     width: 400px;
     display: block;
