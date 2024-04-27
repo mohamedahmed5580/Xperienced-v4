@@ -63,7 +63,7 @@ span{
 .sidepar {
   display: flex;
   flex-direction: row;
-  width: 139.1px;
+  width: 90px;
   height: fit-content;
   box-sizing: border-box;
 }
